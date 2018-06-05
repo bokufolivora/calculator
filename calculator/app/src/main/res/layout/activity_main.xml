@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/answerView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#e4e2e2"
+            android:text=""
+            android:textAlignment="textEnd"
+            android:textColor="#f39800"
+            android:textSize="30sp" />
+
+
+        <Button
+            android:id="@+id/buttonClear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CLR"
+            android:textSize="30sp" />
+
+
+        <include
+            android:id="@+id/calkey"
+            layout="@layout/ten_key"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+
+
+</android.support.constraint.ConstraintLayout>
